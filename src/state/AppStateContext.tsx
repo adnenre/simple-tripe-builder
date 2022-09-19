@@ -1,11 +1,11 @@
 import { ITrip } from "../components/Types";
-import { createContext, useContext, useEffect, Dispatch } from "react";
+import { createContext, useContext, Dispatch } from "react";
 import { AppState, appStateReducer } from "./AppStateReducer";
 import { withInitialState } from "../HOC/withInitialState";
 import { useImmerReducer } from "use-immer";
 
 import { Action } from "./actions";
-import TripService from "../services/TripService";
+//import TripService from "../services/TripService";
 
 type AppStateProviderProps = {
   children: React.ReactNode;
