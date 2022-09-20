@@ -2,10 +2,10 @@ import React, { useRef } from "react";
 import UploadIcon from "./UploadIcon";
 import { InputUI } from "./Types";
 const TlabelClasses =
-  "inline-flex col-span-1 text-xl items-center   text-gray-500 cursor-pointer";
+  "inline-flex md:col-span-2 whitespace-nowrap text-xl items-center   text-gray-500 cursor-pointer";
 
 const TImagePreviewClasses =
-  "col-span-11 flex flex-col justify-center items-center w-full h-44 bg-gray-50 rounded-lg border-2 border-gray-300 border-dashed cursor-pointer dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600";
+  "md:col-span-10 flex flex-col justify-center items-center w-full h-44 bg-gray-50 rounded-lg border-2 border-gray-300 border-dashed cursor-pointer dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600";
 
 interface IDropZoneProps extends InputUI {
   onUpload: (data: any) => void;
@@ -37,7 +37,7 @@ const TDropZone = ({ label, name, onUpload }: IDropZoneProps) => {
     }
   };
   return (
-    <div className="grid grid-cols-12 gap-5">
+    <div className="grid grid-flow-row auto-rows-max md:grid-cols-12 gap-5">
       <label
         className={TlabelClasses}
         htmlFor={name}
