@@ -14,15 +14,17 @@ const TSelect = ({ currrentTripId, onSelectAction }: ISelectProps) => {
   };
 
   return (
-    <div>
-      <select value={selected} onChange={handleChange}>
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.text}
-          </option>
-        ))}
-      </select>
-    </div>
+    <select
+      className="cursor-pointer p-1 rounded"
+      value={selected}
+      onChange={handleChange}
+    >
+      {options.map((option) => (
+        <option key={option.value} value={option.value}>
+          {option.text}
+        </option>
+      ))}
+    </select>
   );
 };
 

@@ -3,10 +3,11 @@ interface TLoadingProps {
 }
 
 const Loading = ({ message }: TLoadingProps) => {
-  if (message) {
-    return <div>{message}</div>;
-  }
-  return <div>...loading</div>;
+  return (
+    <div className="w-full h-[100vh] flex bg-black">
+      <p className="m-auto text-white">{message ? message : "...loading"}</p>
+    </div>
+  );
 };
 
 export default Loading;
