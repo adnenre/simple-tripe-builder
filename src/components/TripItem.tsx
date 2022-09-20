@@ -11,7 +11,7 @@ const TripItem = ({ trip, handleSelectAction }: ITripProps) => {
     <div className="flex gap-5">
       <div className="flex flex-col items-center    md:w-full  bg-white rounded-lg border shadow-md md:flex-row w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
         <img
-          className="object-cover w-full  rounded h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+          className="object-cover w-full  rounded-t-xl h-full md:w-48 md:rounded-none md:rounded-l-xl"
           src={trip_image}
           alt={name}
         />
